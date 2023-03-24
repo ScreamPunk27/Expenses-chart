@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --softRed:hsl(10, 79%, 65%);
+    --cyan:hsl(186, 34%, 60%);
+    --darkBrown:hsl(25, 47%, 15%);
+    --mediumBrown:hsl(28, 10%, 53%);
+    --cream:hsl(27, 66%, 92%);
+    --paleOrange:hsl(33, 100%, 98%);
+}
+
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    font-family: 'DM Sans',sans-serif;
+    background-color: var(--cream);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 12px;
+    background-color: var(--softRed);
+}
+
+.top__left{
+    color: var(--cream);
+}
+
+.top__left p{
+    margin-bottom: .5rem;
+}
+
+.main{
+    margin-top: 1rem;
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.main__heading{
+    text-align: left;
+}
+
+.container-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 .3rem;
+}
+
+.main__bars{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 3rem;
+    color: var(--mediumBrown);
+    text-align: center;
+}
+
+.bar{
+    background-color: var(--softRed);
+    border-radius: 3px;
+    width: 35px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.bar1{
+    height: 40px;
+}
+
+.bar2{
+    height: 70px;
+}
+
+.bar3{
+    height: 120px;
+    background-color: var(--cyan);
+}
+
+.bar4{
+    height: 60px;
+}
+
+.bar5{
+    height: 50px;
+}
+
+.bar6{
+    height: 100px;
+}
+
+.bar7{
+    height: 55px;
+}
+
+.separator{
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 2rem;
+    background-color: var(--cream);
+}
+
+.main__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 2rem;
+}
+
+.main__bottom p{
+    color: var(--mediumBrown);
+}
+
+.main__bottom-right h4{
+   text-align: right;
+}
+
+
+/*CURSOR EFFECTS*/
+
+.price{
+    background-color: #000;
+    color: #fff;
+    padding: 0.3rem;
+    font-size: .7rem;
+    border-radius: 3px;
+}
+
+.price3,.price4{
+    visibility: hidden;
+}
+
+.bar:hover{
+    opacity: .7;
+}
+
+@media screen and (min-width:400px){
+    .container{
+        width: 375px;
+    }
+}
